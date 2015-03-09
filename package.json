@@ -2,9 +2,9 @@
   "name": "skynet-app",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "web.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test ./node_modules/mocha/bin/mocha"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +18,9 @@
     "jade": "^1.9.2",
     "nconf": "^0.7.1",
     "redis": "^0.12.1"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.7",
+    "mocha": "^2.2.1"
   }
 }
