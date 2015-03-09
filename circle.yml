@@ -1,4 +1,5 @@
 deployment:
   staging:
     branch: master
-    heroku: rippled-skynet-ui
+    heroku:
+      appname: rippled-skynet-ui
