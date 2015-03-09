@@ -1,0 +1,4 @@
+deployment:
+  staging:
+    branch: master
+    heroku: rippled-skynet-ui
