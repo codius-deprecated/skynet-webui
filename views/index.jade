@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css")
+    link(rel="stylesheet", href="main.css")
+    title Skynet
+  body
+    div(class="row")
+      div(class="medium-12 columns")
+        h1 Rippled Commits
+        table
+          tr
+            th SHA
+            th Summary
+            th Author
+          each commit in commits
+            tr
+              td
+                p= commit.sha
+                a(href="/launch/"+commit.sha, class="button") Launch a testnet &raquo;
+              td= commit.commit.message
+              td
+                p= commit.author.login
+                img(src=commit.author.avatar_url)
